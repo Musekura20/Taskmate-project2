@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMate Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img src="../images/pagelines-brands-solid-full.svg" alt="" />
+          <h2>TaskMate</h2>
+        </div>
+
+        <nav>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="dashboard.html">My Tasks</a>
+          <a href="dashboard.html">Goals</a>
+          <a href="settings.html">Settings</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="top">
+          <div>
+            <h1>Good Afternoon!</h1>
+            <p>Keep going. You are doing great.</p>
+          </div>
+        </div>
+
+        <section class="statistics">
+          <div class="stat-card">
+            <h3>Total Tasks</h3>
+            <p>5</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Completed</h3>
+            <p>2</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>Pending</h3>
+            <p>3</p>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+          <div class="tasks">
+            <div class="section-heading">
+              <h2>Today's Tasks</h2>
+              <button>+ Add Task</button>
+            </div>
+
+            <div class="task task-completed">
+              <span class="checkbox">✓</span>
+              <div>
+                <h3>Finish CSS Grid Practice</h3>
+                <p>09:00 AM</p>
+              </div>
+            </div>
+
+            <div class="task task-completed">
+              <span class="checkbox">✓</span>
+              <div>
+                <h3>Study Java OOP</h3>
+                <p>11:00 AM</p>
+              </div>
+            </div>
+
+            <div class="task">
+              <span class="checkbox"></span>
+              <div>
+                <h3>Read English Chapter</h3>
+                <p>02:00 PM</p>
+              </div>
+            </div>
+
+            <div class="task">
+              <span class="checkbox"></span>
+              <div>
+                <h3>Walk for 40 Minutes</h3>
+                <p>05:00 PM</p>
+              </div>
+            </div>
+
+            <div class="task">
+              <span class="checkbox"></span>
+              <div>
+                <h3>Prepare Dinner</h3>
+                <p>07:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <h2>Your Progress</h2>
+
+            <div class="circle">
+              <span>40%</span>
+            </div>
+
+            <p>2 of 5 tasks completed</p>
+          </div>
+        </section>
+
+        <section class="goals">
+          <h2>My Goals</h2>
+
+          <div class="goal">
+            <div>
+              <p>Improve my Java skills</p>
+              <span>60%</span>
+            </div>
+            <div class="bar">
+              <div class="bar-fill first"></div>
+            </div>
+          </div>
+
+          <div class="goal">
+            <div>
+              <p>Build my portfolio</p>
+              <span>30%</span>
+            </div>
+            <div class="bar">
+              <div class="bar-fill second"></div>
+            </div>
+          </div>
+
+          <div class="goal">
+            <div>
+              <p>Stay consistent with my goals</p>
+              <span>50%</span>
+            </div>
+            <div class="bar">
+              <div class="bar-fill third"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
