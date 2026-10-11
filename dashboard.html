@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMate Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-[Arial,sans-serif] text-[#172b4d] bg-[#f8f8fc]">
+
+    <div class="min-h-screen block md:grid md:grid-cols-[230px_1fr]">
+
+      <!-- SIDEBAR (full height + sticky on medium screens and up) -->
+      <aside class="bg-[#877bf4] text-white px-[18px] py-[25px] md:sticky md:top-0 md:h-screen md:self-start md:overflow-y-auto">
+
+        <div class="flex justify-center items-center">
+          <img src="images/pagelines-brands-solid-full.svg" alt="" class="w-[30px] h-[40px] mb-[30px]" />
+          <h2 class="mb-[35px] text-2xl font-bold">TaskMate</h2>
+        </div>
+
+        <nav class="flex flex-col gap-[10px]">
+          <a href="dashboard.html" class="p-[13px] rounded-[10px] bg-[#6045d8]">Dashboard</a>
+          <a href="dashboard.html" class="p-[13px] rounded-[10px] hover:bg-[#6045d8]">My Tasks</a>
+          <a href="dashboard.html" class="p-[13px] rounded-[10px] hover:bg-[#6045d8]">Goals</a>
+          <a href="settings.html" class="p-[13px] rounded-[10px] hover:bg-[#6045d8]">Settings</a>
+        </nav>
+
+      </aside>
+    </div>
+  </body>
+</html>
