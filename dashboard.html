@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskMate Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="font-[Arial,sans-serif] text-[#172b4d] bg-[#f8f8fc]">
@@ -27,6 +27,145 @@
         </nav>
 
       </aside>
+
+      <!-- MAIN DASHBOARD -->
+      <main class="p-[30px]">
+
+        <div class="flex justify-between items-center mb-[25px]">
+          <div>
+            <h1 class="text-[28px] font-bold">Good Afternoon!</h1>
+            <p class="mt-[5px] text-[#667085]">Keep going. You are doing great.</p>
+          </div>
+        </div>
+
+
+        <!-- STATISTICS -->
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-[18px] mb-5">
+
+          <div class="p-5 rounded-[15px] bg-[#f0edff]">
+            <h3 class="text-lg font-bold">Total Tasks</h3>
+            <p class="mt-[10px] text-[32px] font-bold">5</p>
+          </div>
+
+          <div class="p-5 rounded-[15px] bg-[#eaf7f3]">
+            <h3 class="text-lg font-bold">Completed</h3>
+            <p class="mt-[10px] text-[32px] font-bold">2</p>
+          </div>
+
+          <div class="p-5 rounded-[15px] bg-[#fdeff7]">
+            <h3 class="text-lg font-bold">Pending</h3>
+            <p class="mt-[10px] text-[32px] font-bold">3</p>
+          </div>
+
+        </section>
+
+
+        <!-- DASHBOARD CONTENT -->
+        <section class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-5">
+
+          <div class="bg-white p-[22px] rounded-[18px]">
+
+            <div class="flex justify-between items-center mb-[15px]">
+              <h2 class="text-2xl font-bold">Today's Tasks</h2>
+              <button class="bg-[#6045d8] text-white px-[14px] py-[9px] rounded-lg">+ Add Task</button>
+            </div>
+
+            <div class="grid grid-cols-[25px_1fr] gap-3 py-4 border-b border-[#eeeeee]">
+              <span class="w-5 h-5 border-2 border-[#075c58] bg-[#075c58] text-white rounded-[5px] flex justify-center items-center">✓</span>
+              <div>
+                <h3 class="text-[15px] font-bold">Finish CSS Grid Practice</h3>
+                <p class="mt-[3px] text-[13px] text-[#8993a4]">09:00 AM</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-[25px_1fr] gap-3 py-4 border-b border-[#eeeeee]">
+              <span class="w-5 h-5 border-2 border-[#075c58] bg-[#075c58] text-white rounded-[5px] flex justify-center items-center">✓</span>
+              <div>
+                <h3 class="text-[15px] font-bold">Study Java OOP</h3>
+                <p class="mt-[3px] text-[13px] text-[#8993a4]">11:00 AM</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-[25px_1fr] gap-3 py-4 border-b border-[#eeeeee]">
+              <span class="w-5 h-5 border-2 border-[#778399] rounded-[5px]"></span>
+              <div>
+                <h3 class="text-[15px] font-bold">Read English Chapter</h3>
+                <p class="mt-[3px] text-[13px] text-[#8993a4]">02:00 PM</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-[25px_1fr] gap-3 py-4 border-b border-[#eeeeee]">
+              <span class="w-5 h-5 border-2 border-[#778399] rounded-[5px]"></span>
+              <div>
+                <h3 class="text-[15px] font-bold">Walk for 40 Minutes</h3>
+                <p class="mt-[3px] text-[13px] text-[#8993a4]">05:00 PM</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-[25px_1fr] gap-3 py-4 border-b border-[#eeeeee]">
+              <span class="w-5 h-5 border-2 border-[#778399] rounded-[5px]"></span>
+              <div>
+                <h3 class="text-[15px] font-bold">Prepare Dinner</h3>
+                <p class="mt-[3px] text-[13px] text-[#8993a4]">07:00 PM</p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="bg-white p-[22px] rounded-[18px] text-center">
+
+            <h2 class="mb-5 text-2xl font-bold">Your Progress</h2>
+
+            <div class="w-[140px] h-[140px] mt-[10px] mx-auto mb-5 rounded-full bg-[image:conic-gradient(#877bf4_40%,#e2e5ed_60%)] flex justify-center items-center">
+              <span class="text-[25px] font-bold">40%</span>
+            </div>
+
+            <p>2 of 5 tasks completed</p>
+
+          </div>
+
+        </section>
+
+
+        <!-- GOALS -->
+        <section class="mt-5 bg-white p-[22px] rounded-[18px]">
+
+          <h2 class="text-2xl font-bold">My Goals</h2>
+
+          <div class="mt-5">
+            <div class="flex justify-between mb-2">
+              <p>Improve my Java skills</p>
+              <span>60%</span>
+            </div>
+            <div class="h-2 bg-[#e6e8ed] rounded-[10px]">
+              <div class="h-full w-[60%] bg-[#6045d8] rounded-[10px]"></div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="flex justify-between mb-2">
+              <p>Build my portfolio</p>
+              <span>30%</span>
+            </div>
+            <div class="h-2 bg-[#e6e8ed] rounded-[10px]">
+              <div class="h-full w-[30%] bg-[#ca5aef] rounded-[10px]"></div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="flex justify-between mb-2">
+              <p>Stay consistent with my goals</p>
+              <span>50%</span>
+            </div>
+            <div class="h-2 bg-[#e6e8ed] rounded-[10px]">
+              <div class="h-full w-[50%] bg-[#56a9ec] rounded-[10px]"></div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
     </div>
   </body>
 </html>
